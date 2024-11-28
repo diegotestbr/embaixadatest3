@@ -1,0 +1,32 @@
+OBS: Para adicionar o JAR do MySQL Connector/J manualmente ao seu projeto no IntelliJ IDEA, siga estas etapas:
+
+1. Baixar o JAR do MySQL Connector/J:
+Acesse o site oficial de downloads do MySQL Connector/J: https://dev.mysql.com/downloads/connector/j/
+Escolha a versão mais recente do "Platform Independent" (independente de plataforma) e baixe o arquivo.
+Após o download, extraia o conteúdo (geralmente é um arquivo .zip).
+Dentro da pasta extraída, encontre o arquivo .jar (algo como mysql-connector-java-x.x.x.jar).
+
+2. Colocar o arquivo JAR na pasta do projeto:
+Dentro do seu projeto no IntelliJ, crie uma pasta chamada lib na raiz do seu projeto (ou qualquer nome de pasta que preferir).
+Mova o arquivo .jar que você baixou para essa pasta lib.
+
+3. Adicionar o JAR ao classpath do projeto no IntelliJ:
+Agora, você precisa adicionar o JAR ao classpath do projeto para que o Java consiga encontrar o driver JDBC.
+
+Abrir as Configurações do Projeto:
+
+No painel lateral esquerdo do IntelliJ, clique com o botão direito no nome do seu projeto e selecione "Open Module Settings" (ou apenas pressione F4 no teclado).
+Adicionar a Biblioteca:
+
+Na janela que se abrir, vá até a aba "Libraries" (ou "Bibliotecas", se o IntelliJ estiver em português).
+Clique no ícone "+" no canto superior esquerdo (Adicionar Biblioteca) e selecione "Java".
+Selecionar o JAR:
+
+Navegue até a pasta onde você colocou o arquivo .jar (a pasta lib que você criou).
+Selecione o arquivo .jar e clique em "OK".
+Confirmar as alterações:
+
+Após adicionar o JAR, clique em "OK" para fechar a janela de configurações.
+4. Verificar se o JAR foi adicionado corretamente:
+Volte para a janela principal do IntelliJ e verifique se o JAR foi adicionado à lista de bibliotecas do seu projeto.
+Para isso, no painel lateral, expanda o item "External Libraries". Lá você deve ver o mysql-connector-java-x.x.x.jar
